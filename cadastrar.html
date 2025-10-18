@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="cadastrar.css">
+    <script src="cadastrar.js" defer></script>
+</head>
+
+<header>
+    <nav>
+        <div class="logo">
+        <li>
+            <a href="index.html" title="Rei das Pizzas">
+              <img src="imagens/create-a-modern-and-elegant-logo-for-a-v_Kd-qjgc1TwOb890MsNvpIg_dajatjONSXy4FuK0RJuIWg__1_-removebg-preview.png" />
+            </a>
+          </li>
+        </div>
+    </nav>
+</header>
+<body>
+    <div class="container">
+        <div class="card">
+        <h1>Cadastro</h1>
+        <form id="criarCadastro">
+    
+            <label for="nome">Nome</label>
+            <input type="text" name="nome" id="nome" placeholder="Nome" required>
+
+            <label for="sobrenome">Sobrenome</label>
+            <input type="text" name="sobrenome" id="sobrenome" placeholder="Sobrenome" required>
+
+            <label for="email">Email</label>
+            <input type="email"name="email" id="email" placeholder="Email" required>
+
+            <label for="senha">Senha</label>
+            <input type="password" name="senha" id="senha" required minlength="6" placeholder="Digite sua senha">
+
+            <label for="confirmarSenha">Confirmar senha</label>
+            <input type="password" name="confirmarSenha" id="confirmarSenha" required minlength="6" placeholder="Confirme sua senha">
+
+            <button  type="submit" class="btn">Cadastrar</button>
+        </form>
+    </div>
+    </div>
+    
+</body>
+</html>

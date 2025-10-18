@@ -1,0 +1,340 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+  }
+  
+  
+  body{
+    width: 100%;
+      background-image: url(img/pizza2.jpg);
+  }
+  
+  nav {
+   width: 100%;
+   height: 8rem;
+      background-color: rgb(192, 18, 18);
+      align-items: center;
+      justify-content: center;
+      padding: 0 2rem;
+      }
+  nav ul{
+      user-select: none;
+      list-style: none;
+      display:flex;
+      gap: 3rem;
+      justify-content: center;
+  }
+  nav ul li {
+      margin-top: 2rem;
+  }
+  
+  nav ul li a {
+    font-size: 2rem;
+      text-decoration: none;
+      padding: 1.2rem;
+      display:block;
+      color: rgb(0, 0, 0);
+  }
+  
+  nav ul li a:hover{
+      font-size: 1rem;
+      color: bisque;
+      transition: font-size 0.5s ease;
+  }
+  .logo{
+    display: flex;
+    height: 6rem;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+  
+  }
+  
+  .icon {
+    display: block;
+    justify-content: center;
+    align-items: center;
+   font-size: 1.8rem;
+   
+  }
+  title{
+      font-size: 8rem;
+      color: blue;
+  }
+  
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(292px, 1fr));
+    gap: 2rem;
+    width: 100vw;
+    padding: 2rem;
+    margin: 0 auto;
+  }
+  
+  
+  
+    .card {
+      display: grid;
+      margin: auto;
+      width: 32rem;
+      width: 20rem;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      background: #ffffff;
+      cursor: pointer;
+      font-family: Arial, sans-serif;
+      transition: transform 0.3s;
+  
+    }
+    
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    
+    .card img {
+      width: 95%;
+      height: auto;
+      display: flex;
+    }
+  
+  
+    .card-content {
+      padding: 15px;
+    }
+    
+    h2{
+      justify-content: center;
+      display: flex;
+      padding: 0.8rem;
+    }
+  
+    .card-content h2 {
+      font-size: 1.25rem;
+      margin: 0 0 10px;
+    }
+    
+    .card-content p {
+      font-size: 1rem;
+      color: #444;
+    }
+  
+    .img-catupiry {
+      width: 100%;
+      object-fit: cover;
+    }
+    
+  
+    .btn {
+      justify-content: center;
+      display: flex;
+      background-color: #007bff;
+      color: white;
+      border-radius: 0.3rem;
+      text-decoration: none;
+    }
+    
+    .btn:hover {
+      background-color: #0056b3;
+    }
+  
+    .btn-comprar,
+    .btn-carrinho {
+      background-color: #28a745;
+      color: white;
+      padding: 0.2rem 6rem;
+      border: none;
+      border-radius: 0.8rem;
+      cursor: pointer;
+   text-align: center;
+   margin: 0.3rem;
+      transition: background-color 0.3s ease;
+    }
+    
+    .btn-comprar:hover {
+      background-color: #218838;
+    }
+    
+    .btn-carrinho {
+      background-color: #007bff;
+    }
+    
+    .btn-carrinho:hover {
+      background-color: #0056b3;
+    }
+    
+    p{
+      margin: 2rem;
+    }
+    
+    
+    .footer{
+      width: 100%;
+      height: 17rem;
+  background-color:rgb(192, 18, 18);
+    }
+  
+    .footer-contact{
+      width: 100%;
+   height: 7rem;
+   background-color:#771010;
+   color: white;
+   padding: 0.8rem;
+  
+  }
+  
+    .footer-copy {
+    padding: 0.6rem;
+    }
+  
+    .nome-produto {
+      font-weight: bold;
+      font-size: 1.2rem;
+      color: #2c3e50; 
+      margin-right: 8px;
+    }
+    @media (max-width: 768px){
+      
+      nav{
+        height: 100%;
+        padding: 1rem;
+      }
+      
+      nav ul{
+        flex-wrap: wrap;
+        gap: 1rem;
+        padding: 0 4rem;
+        justify-content: center;
+      }
+      nav ul li a{
+        font-size: 1.6rem;
+        padding-top: 0.1rem;
+      }
+      nav ul li{
+        margin-top: 1rem;
+      }
+      nav ul li a {
+        font-size: 1.6rem;
+        padding: 0.6rem;
+      }
+      .logo{
+        display: flex;
+        height: 1rem;
+        margin-top: 1.6rem;
+  
+         }
+         .card-grid{
+          width: 100%;
+          grid-template-columns: repeat(2, 1fr);
+          gap: 1rem;
+          padding: 4rem 0.8rem;
+         }
+         .card{
+          width: 20rem;
+          height: 38rem;
+          margin-bottom: 1.6rem;
+         }
+  
+  .footer{
+    width: 100vw;
+    height: auto;
+    padding-bottom: 1rem;
+    box-sizing: border-box;
+  
+    }
+  
+  .footer-contact{
+    width: 100vw;
+    height: 20%;
+   
+  }
+  .footer-copy{
+    font-size: 0.8rem;
+    padding: 0.2rem;
+   width: 100vw;
+  }
+  
+    }
+      
+    @media (max-width: 702px){
+  
+      nav{
+        height: 100%;
+        padding: 1rem;
+      }
+      
+  
+    .card-grid{
+  width: 100%;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 0.8rem;
+  padding: 4rem 0.2rem;
+    }
+    .card{
+      width: 22rem;
+      height: 38rem;
+    }
+  
+    }
+    @media (max-width: 360px){
+      nav{
+        height: auto;
+        padding: 0.5rem;
+      }
+      nav{
+        height: 8rem;
+        width: 100%;
+      }
+      nav ul {
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        justify-content: center;
+        padding: 0 auto;
+      }
+     
+      .card-grid {
+        grid-template-columns: 1fr;
+        padding: 1rem;
+        gap: 1rem;
+      }
+  
+    .card {
+      width: 100%;
+      height: auto;
+      padding: 1rem;
+    }
+    .card img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+    .btn-comprar,
+    .btn-carrinho {
+      padding: 0.4rem 1rem;
+      width: 100%;
+      font-size: 1rem;
+    }
+    .footer {
+      padding: 0;
+      height: auto;
+    }
+  
+    .footer-contact,
+    .footer-copy {
+      font-size: 0.8rem;
+      margin: 0 auto;
+     text-align: center;
+    }
+    }
+  
+    

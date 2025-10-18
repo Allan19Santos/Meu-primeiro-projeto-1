@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+  }
+  
+body{
+    width: 100%;
+    background-image: url(img/pizza2.jpg);
+    }
+      
+    nav {
+        margin: 0 auto;
+     width: 100%;
+        height: 8rem;
+          background-color: rgb(192, 18, 18);
+
+          }
+    
+         .logo{
+                display: flex;
+                height: 6rem;
+                align-items: center;
+                justify-content: center;
+                padding-top: 1.5rem;
+                
+             
+         }
+
+    .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    }
+  
+
+
+.container .card {
+    display: block;
+    padding: 2rem;
+    min-height: 26rem;
+    background-color: rgb(192, 18, 18);
+    box-shadow: 1rem 2rem 4rem rgba(0, 0, 0, 1);
+    border-radius: 1rem;
+    transition: transform 0.4s;
+    cursor: pointer;
+
+}
+.container .card:hover {
+    transform: translateY(-.5rem);
+  }
+
+.card h1{
+    font-size: 2.4rem;
+    margin: 1rem 0 2rem 0 ;
+    text-align: center;
+}
+
+label{
+    display: flex;
+    padding: 0.3rem;
+}
+
+input{
+    margin-bottom: 1rem;
+    padding: 0.6rem 2rem;
+    font-size: 0.9rem;
+    border-radius: 0.3rem;
+    
+}
+
+.botao,
+.botao-cadastro{
+    display: block;
+    background-color:rgb(190, 186, 186);
+    font-size: 0.8rem;
+    font-weight: bold;
+    margin: 2rem auto;
+    padding: 0.4rem 1.6rem; 
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: transform 0.4s ease;
+
+}
+
+.botao:hover,
+ .botao-cadastro:hover{
+    background-color: rgb(177, 170, 170);
+}
+
+.esqueceu-senha{
+    display: flex;
+    font-size: 0.9rem;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    margin-bottom: 2.4rem;
+}
+.esqueceu-senha:hover {
+    text-decoration: underline;
+  }
+  .criar-conta{
+    display: block;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 1.2rem;
+   }
+
+   .criar-conta:hover {
+    color: rgb(201, 201, 201);
+    text-decoration: underline;
+  }
+  @media (max-width: 370px){
+    nav{
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .container{
+        width: 100%;
+        height: auto;
+        margin-top: 2rem;
+        padding: 1rem;
+    }
+    }
